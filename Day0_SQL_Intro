@@ -1,0 +1,49 @@
+ఇప్పుడు నీకు ఒక విషయం straightగా చెప్తాను.
+చాలామంది SQL ఎందుకు fail అవుతారు?
+
+వాళ్లు ఇలా నేర్చుకుంటారు
+CREATE DATABASE, CREATE TABLE
+INSERT, SELECT, WHERE, ORDER BY, GROUP BY - Finished
+
+తర్వాత interviewలో
+Customers table, Orders table
+Payments table, Products table
+Find customers who purchased more than ₹10,000 in last 3 months but never returned a product?? - అంటే blank అయిపోతారు, ఎందుకంటే syntax మాత్రమే తెలుసు.
+
+Industry thinking రాదు - మనం అలా నేర్చుకోం
+
+###Final Learning Path
+Phase 0: Database Thinking
+    |
+Phase 1: MySQL Installation
+          Workbench
+          CLI
+          Server
+   |
+Phase 2: Database Fundamentals
+   |
+Phase 3: Table Design
+   |
+Phase 4: CRUD Operations
+   |
+Phase 5: Filtering
+   |
+Phase 6: Functions
+  |
+Phase 7: Joins
+  |
+Phase 8: Grouping
+  |
+Phase 9: Subqueries
+  |
+Phase 10: Views
+  |
+Phase 11: Stored Procedures
+  |
+Phase 12: Transactions
+  |
+Phase 13: Indexes
+  |
+Phase 14: Performance Tuning
+  |
+Phase 15: Real Industry Project
