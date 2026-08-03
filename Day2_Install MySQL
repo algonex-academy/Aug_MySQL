@@ -1,0 +1,10 @@
+Installing and Understanding the MySQL Ecosystem
+
+By the end of today, students should understand:
+What is MySQL?
+What is MySQL Server?
+What is MySQL Workbench?
+Why do we need both?
+How do they communicate?
+How does a backend application connect to MySQL?
+Install and configure MySQL correctly
