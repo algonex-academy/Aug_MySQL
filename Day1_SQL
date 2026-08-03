@@ -1,0 +1,87 @@
+Database?: An organized collection of related data.
+
+Notice the word related
+Let's take an example and understand folkss...
+An online shopping application stores:
+╰┈➤ Users
+    Heena
+    Purushotham
+    Varun
+╰┈➤ Products
+    Laptop
+    Keyboard
+    Mouse
+╰┈➤ Orders
+Heena -> Laptop
+Varun -> Mouse -> Everything is connected -> This organized collection of related data forms a database
+
+⊱┄┄┄ 𝗗𝗕𝗠𝗦 entoo chudhama?
+Chaalamndi beginners confuse DATABASE AND DBMS::
+𝗔 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝗶𝘀 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮
+𝗔 𝗗𝗕𝗠𝗦 𝗶𝘀 𝘁𝗵𝗲 𝘀𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝘁𝗵𝗮𝘁 𝗺𝗮𝗻𝗮𝗴𝗲𝘀 𝘁𝗵𝗮𝘁 𝗱𝗮𝘁𝗮
+
+Think about your photos
+𝗬𝗼𝘂𝗿 𝗽𝗵𝗼𝘁𝗼𝘀 𝗮𝗿𝗲 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮
+𝗧𝗵𝗲 𝗚𝗮𝗹𝗹𝗲𝗿𝘆 𝗮𝗽𝗽 𝗵𝗲𝗹𝗽𝘀 𝘆𝗼𝘂 𝘃𝗶𝗲𝘄, 𝘀𝗲𝗮𝗿𝗰𝗵, 𝗱𝗲𝗹𝗲𝘁𝗲, 𝗮𝗻𝗱 𝗼𝗿𝗴𝗮𝗻𝗶𝘇𝗲 𝘁𝗵𝗲𝗺
+
+Database =  𝙎𝙩𝙤𝙧𝙚𝙙 𝙙𝙖𝙩𝙖
+DBMS = 𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙩𝙝𝙖𝙩 𝙢𝙖𝙣𝙖𝙜𝙚𝙨 𝙩𝙝𝙚 𝙙𝙖𝙩𝙖
+Instead of storing data randomly in files, a DBMS provides a structured and controlled way to manage data
+
+A DBMS helps us:
+- Store data
+- Retrieve data quickly
+- Update data safely
+- Delete data when needed
+- Prevent accidental loss
+- Control access
+- Support multiple users simultaneously
+
+Think of a DBMS as a professional librarian
+-> Without a librarian, finding a single book would take hours
+Endukantee the librarian knows:
+Where each book is
+Who borrowed it
+When it should be returned
+Which shelf it belongs to
+╰┈➤ Similarly a DBMS knows where every piece of data is stored
+
+⊱┄┄┄ MySQL?
+𝖬𝗒𝖲𝖰𝖫 𝗂𝗌 𝗈𝗇𝖾 𝗍𝗒𝗉𝖾 𝗈𝖿 𝖣𝖡𝖬𝖲 -> 𝖳𝗁𝖾𝗋𝖾 𝖺𝗋𝖾 𝗆𝖺𝗇𝗒 𝖽𝖺𝗍𝖺𝖻𝖺𝗌𝖾 𝗌𝗒𝗌𝗍𝖾𝗆𝗌
+𝗙𝗼𝗿 𝗲𝘅𝗮𝗺𝗽𝗹𝗲:
+𝘔𝘺𝘚𝘘𝘓
+𝘗𝘰𝘴𝘵𝘨𝘳𝘦𝘚𝘘𝘓
+𝘖𝘳𝘢𝘤𝘭𝘦 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦
+𝘔𝘪𝘤𝘳𝘰𝘴𝘰𝘧𝘵 𝘚𝘘𝘓 𝘚𝘦𝘳𝘷𝘦𝘳
+𝘚𝘘𝘓𝘪𝘵𝘦
+
+𝗧𝗵𝗲𝘆 𝗮𝗹𝗹 𝘀𝗼𝗹𝘃𝗲 𝘁𝗵𝗲 𝘀𝗮𝗺𝗲 𝗽𝗿𝗼𝗯𝗹𝗲𝗺—𝗺𝗮𝗻𝗮𝗴𝗶𝗻𝗴 𝗱𝗮𝘁𝗮—𝗯𝘂𝘁 𝘄𝗶𝘁𝗵 𝗱𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝘁 𝘀𝘁𝗿𝗲𝗻𝗴𝘁𝗵𝘀 𝗮𝗻𝗱 𝘂𝘀𝗲 𝗰𝗮𝘀𝗲
+Ninna chusaam kadaa::   User
+                          |
+                      Application (Frontend)
+                          |
+                      Backend
+                          |
+                      DBMS (MySQL)
+                          |
+                      Database (Data)
+
+╰┈➤ Tables?
+databases organize information into tables-> Each table stores one type of data
+Examples:
+Users, Products, Orders, Payments, Reviews
+-> Organization makes searching, updating, and maintaining data much easier
+
+╰┈➤Rows and Columns
+A column represents a single type of information(Useer ID, Name, Email..)
+Think of columns as questions
+- What is the user's ID?
+- What is the user's name?
+- What is the user's email? -> 𝗘𝘃𝗲𝗿𝘆 𝗿𝗼𝘄 𝗮𝗻𝘀𝘄𝗲𝗿𝘀 𝘁𝗵𝗼𝘀𝗲 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀
+╰┈➤A row represents one complete record/entity in a horizontal line
+
+Real Industry Example
+Let's take Swiggy -> Instead of one huge table they might have:
+𝗨𝘀𝗲𝗿𝘀, 𝗢𝗿𝗱𝗲𝗿𝘀, 𝗥𝗲𝘀𝘁𝗮𝘂𝗿𝗮𝗻𝘁𝘀, 𝗠𝗲𝗻𝘂 𝗜𝘁𝗲𝗺𝘀
+𝗗𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗣𝗮𝗿𝘁𝗻𝗲𝗿𝘀, 𝗣𝗮𝘆𝗺𝗲𝗻𝘁s, 𝗥𝗲𝘃𝗶𝗲𝘄𝘀, 𝗡𝗼𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀 -> Each table has a specific purpose
+Each table is connected to others -> This is how large applications remain organized even with millions of users
