@@ -47,3 +47,200 @@ Phase 13: Indexes
 Phase 14: Performance Tuning
   |
 Phase 15: Real Industry Project
+
+─━─━ Day 0 – First we Build the Database Mindset─━─━
+Don't think SQL is a programming language - Think of SQL as a language to communicate with a database
+Just like: We speak English to humans - We speak SQL to databases anthee
+
+𝗦𝗮𝗿𝗲𝗲𝗲 𝗕𝗲𝗳𝗼𝗿𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗦𝗤𝗟...
+Let's answer one simple question -> Where is your phone contact list stored? - You have 500 contacts - Ganesh, Rahul, Anil, Akash,...
+
+Most students answer: "Inside the phone memory" -> Not exactly - They are stored inside a database
+𝗬𝗼𝘂𝗿 𝗖𝗼𝗻𝘁𝗮𝗰𝘁𝘀 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗶𝘀 𝘀𝗶𝗺𝗽𝗹𝘆 𝗱𝗶𝘀𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝘁𝗵𝗲 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝘀𝘁𝗼𝗿𝗲𝗱 𝗶𝗻𝘀𝗶𝗱𝗲 𝘁𝗵𝗮𝘁 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲
+
+𝑬𝒙𝒂𝒎𝒑𝒍𝒆 𝟏 – 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑(Suppose you save a new contact)
+Name : Anshul Revuru
+Phone : 9876543210
+Immediately...You open WhatsApp
+Instead of showing 9876543210 ->It shows Anshul Revuru
+Did WhatsApp save your contact? -> No
+What actually happened?
+𝑷𝒉𝒐𝒏𝒆 𝑪𝒐𝒏𝒕𝒂𝒄𝒕 𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆
+|
+𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 𝒓𝒆𝒂𝒅𝒔 𝒊𝒕
+|
+𝑫𝒊𝒔𝒑𝒍𝒂𝒚𝒔 "𝑨𝒏𝒔𝒉𝒖𝒍 𝑹𝒆𝒗𝒖𝒓𝒖"
+Ikkada 𝘖𝘯𝘦 𝘢𝘱𝘱𝘭𝘪𝘤𝘢𝘵𝘪𝘰𝘯 𝘪𝘴 𝘳𝘦𝘢𝘥𝘪𝘯𝘨 𝘥𝘢𝘵𝘢 𝘧𝘳𝘰𝘮 𝘢𝘯𝘰𝘵𝘩𝘦𝘳 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 -> 𝘛𝘩𝘢𝘵 𝘪𝘴 𝘩𝘰𝘸 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦𝘴 𝘸𝘰𝘳𝘬 𝘪𝘯 𝘳𝘦𝘢𝘭 𝘭𝘪𝘧𝘦
+
+𝐄𝐱𝐚𝐦𝐩𝐥𝐞 𝟐 – 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦
+Open Instagram - You immediately see
+Username
+Followers
+Following
+Posts
+Bio
+Stories
+
+𝗪𝗵𝗲𝗿𝗲 𝗶𝘀 𝘁𝗵𝗶𝘀 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝘀𝘁𝗼𝗿𝗲𝗱?
+Not inside your mobile app
+Not inside the source code -> It is stored inside Instagram's database
+
+Whenever you open Instagram:
+𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲
+   |
+𝗕𝗮𝗰𝗸𝗲𝗻𝗱 𝗦𝗲𝗿𝘃𝗲𝗿
+  |
+𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗔𝗽𝗽
+   |
+𝗗𝗶𝘀𝗽𝗹𝗮𝘆 𝗗𝗮𝘁𝗮 Sooo 𝐖𝐢𝐭𝐡𝐨𝐮𝐭 𝐭𝐡𝐞 𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞... 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 𝐢𝐬 𝐣𝐮𝐬𝐭 𝐚𝐧 𝐞𝐦𝐩𝐭𝐲 𝐚𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧
+
+𝗘𝘅𝗮𝗺𝗽𝗹𝗲 𝟯 – 𝗦𝘄𝗶𝗴𝗴𝘆 / 𝗭𝗼𝗺𝗮𝘁𝗼
+You order Chicken Biryan - The order status changes
+𝗢𝗿𝗱𝗲𝗿 𝗣𝗹𝗮𝗰𝗲𝗱
+|
+𝗥𝗲𝘀𝘁𝗮𝘂𝗿𝗮𝗻𝘁 𝗔𝗰𝗰𝗲𝗽𝘁𝗲𝗱
+|
+𝗣𝗿𝗲𝗽𝗮𝗿𝗶𝗻𝗴
+|
+𝗥𝗲𝗮𝗱𝘆
+|
+𝗣𝗶𝗰𝗸𝗲𝗱 𝗨𝗽
+|
+𝗗𝗲𝗹𝗶𝘃𝗲𝗿𝗲𝗱 -> Is someone manually changing your screen? -> No
+𝐸𝑎𝑐ℎ 𝑠𝑡𝑎𝑡𝑢𝑠 𝑖𝑠 𝑠𝑖𝑚𝑝𝑙𝑦 𝑢𝑝𝑑𝑎𝑡𝑖𝑛𝑔 𝑜𝑛𝑒 𝑟𝑜𝑤 𝑖𝑛𝑠𝑖𝑑𝑒 𝑡ℎ𝑒 𝑑𝑎𝑡𝑎𝑏𝑎𝑠𝑒
+𝐸𝑣𝑒𝑟𝑦 𝑡𝑖𝑚𝑒 𝑡ℎ𝑒 𝑑𝑒𝑙𝑖𝑣𝑒𝑟𝑦 𝑝𝑎𝑟𝑡𝑛𝑒𝑟 𝑢𝑝𝑑𝑎𝑡𝑒𝑠 𝑡ℎ𝑒 𝑠𝑡𝑎𝑡𝑢𝑠...
+𝗧𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝗰𝗵𝗮𝗻𝗴𝗲𝘀
+𝗧𝗵𝗲 𝗮𝗽𝗽 𝗿𝗲𝗳𝗿𝗲𝘀𝗵𝗲𝘀
+𝗬𝗼𝘂 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗹𝗮𝘁𝗲𝘀𝘁 𝘀𝘁𝗮𝘁𝘂𝘀
+
+Example 4 – Amazon
+Suppose a product has
+Stock = 100
+You purchase one item -> Database becomes:
+Stock = 99 -> That's it -> Inventory management is nothing but updating values inside a database
+
+𝐄𝐱𝐚𝐦𝐩𝐥𝐞 𝟓 – 𝐆𝐨𝐨𝐠𝐥𝐞 𝐏𝐚𝐲
+𝐘𝐨𝐮𝐫 𝐛𝐚𝐥𝐚𝐧𝐜𝐞::
+𝐆𝐚𝐧𝐞𝐬𝐡 ₌ ₹𝟓𝟎𝟎𝟎
+𝐍𝐚𝐧𝐝𝐚 ₌ ₹𝟐𝟎𝟎𝟎𝟎𝟎
+𝐍𝐚𝐧𝐝𝐚 𝐬𝐞𝐧𝐝𝐆𝐚𝐧𝐞𝐬𝐡 ₹𝟓𝟎𝟎𝟎
+
+Database changes to::
+Ganesh = ₹10000
+Rahul = ₹195000 
+No magic -> Just database updates anthee
+
+Example 6 – Netflix
+You stop watching a movie at 1 hour 17 minutes
+𝖳𝗈𝗆𝗈𝗋𝗋𝗈𝗐... 𝖭𝖾𝗍𝖿𝗅𝗂𝗑 𝗋𝖾𝗌𝗎𝗆𝖾𝗌 𝖿𝗋𝗈𝗆 𝖾𝗑𝖺𝖼𝗍𝗅𝗒 -> 𝟣 𝗁𝗈𝗎𝗋 𝟣𝟩 𝗆𝗂𝗇𝗎𝗍𝖾𝗌 -> 𝗛𝗼𝘄?
+𝗕𝗲𝗰𝗮𝘂𝘀𝗲 𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝘀𝗮𝘃𝗲𝗱 𝘆𝗼𝘂𝗿 𝘄𝗮𝘁𝗰𝗵 𝗽𝗼𝘀𝗶𝘁𝗶𝗼𝗻 𝗶𝗻𝘀𝗶𝗱𝗲 𝗶𝘁𝘀 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲
+
+Example 7 – Gmail
+You search: Amazon Invoice
+Within a second... Thousands of emails are filtered -That's SQL working behind the scenes
+
+𝗧𝗵𝗲 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗮𝘀𝗸𝘀 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲: 
+𝗙𝗶𝗻𝗱 𝗮𝗹𝗹 𝗲𝗺𝗮𝗶𝗹𝘀 - 𝘄𝗵𝗼𝘀𝗲 𝘀𝘂𝗯𝗷𝗲𝗰𝘁 𝗰𝗼𝗻𝘁𝗮𝗶𝗻𝘀 "𝗔𝗺𝗮𝘇𝗼𝗻 𝗜𝗻𝘃𝗼𝗶𝗰𝗲" -> The database returns only matching records
+
+##So Wht Exactly Is a Database? aythee
+╰┈➤ A database is simply A structured system that stores, organizes, retrieves, updates, and manages data efficiently.It is much smarter than Excel
+-𝗜𝘁 𝗶𝘀 𝗺𝘂𝗰𝗵 𝘀𝗺𝗮𝗿𝘁𝗲𝗿 𝘁𝗵𝗮𝗻 𝗘𝘅𝗰𝗲𝗹
+- 𝗠𝘂𝗰𝗵 𝗳𝗮𝘀𝘁𝗲𝗿 𝘁𝗵𝗮𝗻 𝘁𝗲𝘅𝘁 𝗳𝗶𝗹𝗲𝘀
+- 𝗠𝘂𝗰𝗵 𝘀𝗮𝗳𝗲𝗿 𝘁𝗵𝗮𝗻 𝘀𝘁𝗼𝗿𝗶𝗻𝗴 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗿𝗮𝗻𝗱𝗼𝗺𝗹𝘆
+- 𝗘𝘃𝗲𝗿𝘆 𝗺𝗼𝗱𝗲𝗿𝗻 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗱𝗲𝗽𝗲𝗻𝗱𝘀 𝗼𝗻 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲𝘀
+
+Then What Is SQL?
+𝑺𝑸𝑳 𝒔𝒕𝒂𝒏𝒅𝒔 𝒇𝒐𝒓 𝑺𝒕𝒓𝒖𝒄𝒕𝒖𝒓𝒆𝒅 𝑸𝒖𝒆𝒓𝒚 𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 -> 𝑰𝒕 𝒊𝒔 𝒔𝒊𝒎𝒑𝒍𝒚 𝒕𝒉𝒆 𝒍𝒂𝒏𝒈𝒖𝒂𝒈𝒆 𝒖𝒔𝒆𝒅 𝒕𝒐 𝒄𝒐𝒎𝒎𝒖𝒏𝒊𝒄𝒂𝒕𝒆 𝒘𝒊𝒕𝒉 𝒅𝒂𝒕𝒂𝒃𝒂𝒔𝒆𝒔
+
+𝐄𝐱𝐚𝐦𝐩𝐥𝐞:You ask the database: Show all users
+𝐈𝐧 𝐒𝐐𝐋:  SELECT *FROM users; -> That's SQL
+
+A Restaurant Analogy - Imagine visiting a restaurant
+Customer
+  |
+Waiter
+  |  
+Chef
+
+You never enter the kitchen - You speak to the waiter-> The waiter communicates with the chef.
+Alaane User
+         |
+        SQL
+         |
+    Database -> Ikkada SQL is the waiter and the database is the kitchen
+
+𝑾𝒉𝒚 𝑨𝒓𝒆 𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆𝒔 𝒂𝒏𝒕𝒉𝒂 𝑰𝒎𝒑𝒐𝒓𝒕𝒂𝒏𝒕? 𝑰𝒎𝒂𝒈𝒊𝒏𝒆 𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒂 𝒅𝒂𝒕𝒂𝒃𝒂𝒔𝒆
+Questions like:
+- 𝑊ℎ𝑜 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑢𝑠𝑒𝑟𝑠?
+- 𝑊ℎ𝑎𝑡 𝑎𝑟𝑒 𝑡ℎ𝑒𝑖𝑟 𝑝𝑎𝑠𝑠𝑤𝑜𝑟𝑑𝑠?
+- 𝑊ℎ𝑜 𝑓𝑜𝑙𝑙𝑜𝑤𝑠 𝑤ℎ𝑜𝑚?
+- 𝑊ℎ𝑖𝑐ℎ 𝑝𝑜𝑠𝑡𝑠 𝑏𝑒𝑙𝑜𝑛𝑔 𝑡𝑜 𝑤ℎ𝑖𝑐ℎ 𝑢𝑠𝑒𝑟𝑠?
+- 𝑊ℎ𝑖𝑐ℎ 𝑐𝑜𝑚𝑚𝑒𝑛𝑡𝑠 𝑏𝑒𝑙𝑜𝑛𝑔 𝑡𝑜 𝑤ℎ𝑖𝑐ℎ 𝑝𝑜𝑠𝑡?
+𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗰𝗮𝗻 𝗯𝗲 𝘀𝘁𝗼𝗿𝗲𝗱 -> 𝗪𝗶𝘁𝗵𝗼𝘂𝘁 𝗮 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲... 𝗘𝘃𝗲𝗿𝘆 𝗮𝗽𝗽 𝗯𝗲𝗰𝗼𝗺𝗲𝘀 𝘂𝘀𝗲𝗹𝗲𝘀𝘀 𝗸𝗮𝗱𝗮𝗮
+
+What Does a SQL Developer Actually Do?
+Many students think: "𝐀 𝐒𝐐𝐋 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐨𝐧𝐥𝐲 𝐰𝐫𝐢𝐭𝐞𝐬 𝐒𝐄𝐋𝐄𝐂𝐓 𝐪𝐮𝐞𝐫𝐢𝐞𝐬" -> 𝐓𝐡𝐚𝐭 𝐢𝐬 𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐞𝐥𝐲 𝐰𝐫𝐨𝐧𝐠
+A professional SQL Developer:
+╰┈➤Designs database architecture
+- Creates tables
+-Defines relationships
+- Maintains data integrity
+- Optimizes slow queries
+- Creates indexes
+- Writes stored procedures
+- Generates reports
+- Works with backend developers
+- Handles production data safely
+- Troubleshoots performance issues
+𝐀 𝐒𝐐𝐋 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐢𝐬 𝐫𝐞𝐬𝐩𝐨𝐧𝐬𝐢𝐛𝐥𝐞 𝐟𝐨𝐫 𝐭𝐡𝐞 𝐝𝐚𝐭𝐚 𝐟𝐨𝐮𝐧𝐝𝐚𝐭𝐢𝐨𝐧 𝐨𝐟 𝐭𝐡𝐞 𝐞𝐧𝐭𝐢𝐫𝐞 𝐚𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧
+
+###𝗢𝘂𝗿 𝟯𝟬-𝗗𝗮𝘆 𝗣𝗿𝗼𝗷𝗲𝗰𝘁
+We won't learn SQL through random tables like Students, Employees, Customers kaadhu
+𝐈𝐧𝐬𝐭𝐞𝐚𝐝... 𝐖𝐞 𝐰𝐢𝐥𝐥 𝐛𝐮𝐢𝐥𝐝 𝐚 𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐞 𝐈𝐧𝐝𝐮𝐬𝐭𝐫𝐲-𝐋𝐞𝐯𝐞𝐥 𝐀𝐥𝐆𝐎𝐍𝐄𝐗 𝐄-𝐂𝐨𝐦𝐦𝐞𝐫𝐜𝐞 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 𝐟𝐫𝐨𝐦 𝐬𝐜𝐫𝐚𝐭𝐜𝐡
+Modules include:
+ - Users
+- Authentication
+- Products
+- Categories
+- Inventory
+- Shopping Cart
+- Wishlist
+- Orders
+- Payments
+- Coupons
+- Reviews
+- Addresses
+- Delivery
+- Returns
+- Admin Dashboard
+- Reports
+-> Analytics  ->Every SQL concept we learn will immediately be applied to this project
+By Day 30, you won't just know SQL syntax-> You will understand why databases are designed the way they are in real companies.
+
+Day 0 Assignment
+Don't write a single SQL query today
+Instead, observe these applications: WhatsApp, Instagram
+                                    Amazon, Swiggy, Google Pay
+For each app, answer these questions:
+-> 𝗪𝗵𝗮𝘁 𝗱𝗮𝘁𝗮 𝗶𝘀 𝗯𝗲𝗶𝗻𝗴 𝘀𝘁𝗼𝗿𝗲𝗱?
+-> 𝗪𝗵𝗮𝘁 𝗵𝗮𝗽𝗽𝗲𝗻𝘀 𝘄𝗵𝗲𝗻 𝗻𝗲𝘄 𝗱𝗮𝘁𝗮 𝗶𝘀 𝗮𝗱𝗱𝗲𝗱?
+-> 𝗪𝗵𝗮𝘁 𝗵𝗮𝗽𝗽𝗲𝗻𝘀 𝘄𝗵𝗲𝗻 𝗱𝗮𝘁𝗮 𝗶𝘀 𝘂𝗽𝗱𝗮𝘁𝗲𝗱?
+-> 𝗪𝗵𝗮𝘁 𝗵𝗮𝗽𝗽𝗲𝗻𝘀 𝘄𝗵𝗲𝗻 𝗱𝗮𝘁𝗮 𝗶𝘀 𝗱𝗲𝗹𝗲𝘁𝗲𝗱?
+-> 𝗪𝗵𝗶𝗰𝗵 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝗿𝗲𝗾𝘂𝗶𝗿𝗲 𝘀𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴?
+-> 𝗛𝗼𝘄 𝗺𝗮𝗻𝘆 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝘁𝗮𝗯𝗹𝗲𝘀 𝗱𝗼 𝘆𝗼𝘂 𝘁𝗵𝗶𝗻𝗸 𝘁𝗵𝗶𝘀 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗺𝗶𝗴𝗵𝘁 𝗵𝗮𝘃𝗲?
+-> 𝗪𝗵𝗶𝗰𝗵 𝘁𝗮𝗯𝗹𝗲𝘀 𝗮𝗿𝗲 𝗽𝗿𝗼𝗯𝗮𝗯𝗹𝘆 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝘁𝗼 𝗲𝗮𝗰𝗵 𝗼𝘁𝗵𝗲𝗿?(Nizamina SQL Developerki veetiki answer cheyagaladaa)
+
+𝗗𝗮𝘆 𝟭 𝗣𝗿𝗲𝘃𝗶𝗲𝘄(𝗧𝗼𝗺𝗼𝗿𝗿𝗼𝘄 𝘄𝗲 𝗯𝗲𝗴𝗶𝗻 𝗵𝗮𝗻𝗱𝘀-𝗼𝗻 𝗹𝗲𝗮𝗿𝗻𝗶𝗻𝗴)
+Ivii cover chedham:
+  -  𝗪𝗵𝗮𝘁 𝗶𝘀 𝗠𝘆𝗦𝗤𝗟?
+  -  𝗪𝗵𝘆 𝗰𝗼𝗺𝗽𝗮𝗻𝗶𝗲𝘀 𝘂𝘀𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝘀𝗲𝗿𝘃𝗲𝗿𝘀
+  -  𝗜𝗻𝘀𝘁𝗮𝗹𝗹𝗶𝗻𝗴 𝗠𝘆𝗦𝗤𝗟 𝗦𝗲𝗿𝘃𝗲𝗿
+  -  𝗜𝗻𝘀𝘁𝗮𝗹𝗹𝗶𝗻𝗴 𝗠𝘆𝗦𝗤𝗟 𝗪𝗼𝗿𝗸𝗯𝗲𝗻𝗰𝗵
+  -  𝗨𝗻𝗱𝗲𝗿𝘀𝘁𝗮𝗻𝗱𝗶𝗻𝗴 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝘃𝘀 𝗦𝗰𝗵𝗲𝗺𝗮
+  -  𝗪𝗵𝗮𝘁 𝗶𝘀 𝗮 𝗧𝗮𝗯𝗹𝗲?
+  -  𝗥𝗼𝘄𝘀 𝘃𝘀 𝗖𝗼𝗹𝘂𝗺𝗻𝘀
+  -  𝗪𝗵𝘆 𝗣𝗿𝗶𝗺𝗮𝗿𝘆 𝗞𝗲𝘆𝘀 𝗲𝘅𝗶𝘀𝘁
+  -  𝗪𝗵𝘆 𝗘𝘅𝗰𝗲𝗹 𝗶𝘀 𝗻𝗼𝘁 𝗮 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲
+  -  𝗖𝗿𝗲𝗮𝘁𝗶𝗻𝗴 𝗼𝘂𝗿 𝗳𝗶𝗿𝘀𝘁 𝗿𝗲𝗮𝗹 𝗶𝗻𝗱𝘂𝘀𝘁𝗿𝘆 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲
+
+=> 𝙁𝙧𝙤𝙢 𝘿𝙖𝙮 𝟭 𝙤𝙣𝙬𝙖𝙧𝙙, 𝙚𝙫𝙚𝙧𝙮 𝙡𝙚𝙨𝙨𝙤𝙣 𝙬𝙞𝙡𝙡 𝙗𝙚 𝙘𝙤𝙣𝙣𝙚𝙘𝙩𝙚𝙙 𝙩𝙤 𝙤𝙪𝙧 𝙀-𝘾𝙤𝙢𝙢𝙚𝙧𝙘𝙚 𝙥𝙧𝙤𝙙𝙪𝙘𝙩, 𝙨𝙤 𝙗𝙮 𝙩𝙝𝙚 𝙚𝙣𝙙 𝙤𝙛 𝙩𝙝𝙚 𝙘𝙤𝙪𝙧𝙨𝙚 𝙮𝙤𝙪'𝙡𝙡 𝙪𝙣𝙙𝙚𝙧𝙨𝙩𝙖𝙣𝙙 𝙣𝙤𝙩 𝙤𝙣𝙡𝙮 𝙝𝙤𝙬 𝙩𝙤 𝙬𝙧𝙞𝙩𝙚 𝙎𝙌𝙇 𝙗𝙪𝙩 𝙝𝙤𝙬 𝙎𝙌𝙇 𝙥𝙤𝙬𝙚𝙧𝙨 𝙧𝙚𝙖𝙡-𝙬𝙤𝙧𝙡𝙙 𝙨𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙥𝙧𝙤𝙙𝙪𝙘𝙩𝙨
