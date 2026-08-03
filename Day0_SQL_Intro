@@ -148,9 +148,12 @@ That's it ->╰┈➤ 𝗗𝗮𝘁𝗮 𝗶𝘀 𝗻𝗼𝘁𝗵𝗶𝗻𝗴 �
 - Your PAN number is data
 - Your bank balance is data
 - Your marks are data
-- Your salary is data
-- Your fingerprint is data
-- Your face used for Face Unlock is data
+Create an Instagram account -> New user data
+Send a WhatsApp message - Chat data
+Like a post - Like data
+Order food - Order data
+Make a payment -> Transaction data
+Watch a YouTube video -> Watch history -> Ikkada every click creates new data
 - Your location on Google Maps is data -> Every digital application works because of data
 
 ╰┈➤ 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻  is processed, organized, and meaningful/cleaned data that helps us understand something or make a decision
@@ -181,10 +184,17 @@ User Takes Action
  Input                   | Output             
  Stored in database      | Displayed to users 
 
-Servers
-1
-2
-3
+Why Not Excel?
+Imagine Amazon stores products in one Excel file
+10 million customers
+50 million products
+100 million orders -> Thousands of employees updating the same file simultaneously
+
+What happens?
+The Excel file becomes slow, difficult to maintain, and unsafe
+Now imagine someone accidentally deletes a row Or two employees overwrite each other's changes -> This is why Excel is great for small datasets but not for large, multi-user applications
+Companies need systems designed specifically to store and manage massive amounts of data safely KADAA.. Those systems are called databases
+
 Server: A server is a computer or software that provides services, data, or resources to other computers known as clients over a network. -> This architecture is called the client-server model
 -> Servers can handle various functionalities such as sharing data, performing computationsor managing resources for multiple clients
 ╰┈➤Types of Servers
@@ -256,11 +266,14 @@ Modules include:
 - Reviews
 - Addresses
 - Delivery
-- Returns
-- Admin Dashboard
-- Reports
--> Analytics  ->Every SQL concept we learn will immediately be applied to this project
+- Returns,Admin Dashboard, Reports,Analytics  ->Every SQL concept we learn will immediately be applied to this project
 By Day 30, you won't just know SQL syntax-> You will understand why databases are designed the way they are in real companies.
+
+=> Ikkada every software application is built around data
+-> Apps are just interfaces
+-> The real asset is the data
+-> Databases protect that data
+-> SQL is the language used to work with that data
 
 Day 0 Assignment
 Don't write a single SQL query today
