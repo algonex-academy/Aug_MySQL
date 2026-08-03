@@ -138,20 +138,53 @@ You stop watching a movie at 1 hour 17 minutes
 Example 7 – Gmail
 You search: Amazon Invoice
 Within a second... Thousands of emails are filtered -That's SQL working behind the scenes
-
 𝗧𝗵𝗲 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗮𝘀𝗸𝘀 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲: 
 𝗙𝗶𝗻𝗱 𝗮𝗹𝗹 𝗲𝗺𝗮𝗶𝗹𝘀 - 𝘄𝗵𝗼𝘀𝗲 𝘀𝘂𝗯𝗷𝗲𝗰𝘁 𝗰𝗼𝗻𝘁𝗮𝗶𝗻𝘀 "𝗔𝗺𝗮𝘇𝗼𝗻 𝗜𝗻𝘃𝗼𝗶𝗰𝗲" -> The database returns only matching records
 
 ##So Wht Exactly Is a Database? aythee
+##𝘿𝙖𝙩𝙖 is any piece of information that can be stored, processed, and used to make decisions(Data is raw facts)
+That's it ->╰┈➤ 𝗗𝗮𝘁𝗮 𝗶𝘀 𝗻𝗼𝘁𝗵𝗶𝗻𝗴 𝗺𝗼𝗿𝗲 𝘁𝗵𝗮𝗻 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻
+- Your Aadhaar number is data
+- Your PAN number is data
+- Your bank balance is data
+- Your marks are data
+- Your salary is data
+- Your fingerprint is data
+- Your face used for Face Unlock is data
+- Your location on Google Maps is data -> Every digital application works because of data
+
+╰┈➤ 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻  is processed, organized, and meaningful data that helps us understand something or make a decision
+In simplega cheppalantee, Data + Meaning = Information
+
 ╰┈➤ A database is simply A structured system that stores, organizes, retrieves, updates, and manages data efficiently.It is much smarter than Excel
 -𝗜𝘁 𝗶𝘀 𝗺𝘂𝗰𝗵 𝘀𝗺𝗮𝗿𝘁𝗲𝗿 𝘁𝗵𝗮𝗻 𝗘𝘅𝗰𝗲𝗹
 - 𝗠𝘂𝗰𝗵 𝗳𝗮𝘀𝘁𝗲𝗿 𝘁𝗵𝗮𝗻 𝘁𝗲𝘅𝘁 𝗳𝗶𝗹𝗲𝘀
 - 𝗠𝘂𝗰𝗵 𝘀𝗮𝗳𝗲𝗿 𝘁𝗵𝗮𝗻 𝘀𝘁𝗼𝗿𝗶𝗻𝗴 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗿𝗮𝗻𝗱𝗼𝗺𝗹𝘆
 - 𝗘𝘃𝗲𝗿𝘆 𝗺𝗼𝗱𝗲𝗿𝗻 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗱𝗲𝗽𝗲𝗻𝗱𝘀 𝗼𝗻 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲𝘀
 
+𝗜𝗳 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗱𝗮𝘁𝗮, 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 -> 𝗜𝗳 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲, 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗦𝗤𝗟
+###Real Industry Workflow
+User
+ |
+Produces Data
+    |
+Database Stores Data
+     |
+Backend Processes Data
+      |
+Application Displays Information
+      |
+User Takes Action
+
+      𝗗𝗮𝘁𝗮                   𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 
+ Raw facts               | Processed facts    
+ No meaning by itself    | Has meaning        
+ Difficult to understand | Easy to understand 
+ Input                   | Output             
+ Stored in database      | Displayed to users 
+
 Then What Is SQL?
 𝑺𝑸𝑳 𝒔𝒕𝒂𝒏𝒅𝒔 𝒇𝒐𝒓 𝑺𝒕𝒓𝒖𝒄𝒕𝒖𝒓𝒆𝒅 𝑸𝒖𝒆𝒓𝒚 𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 -> 𝑰𝒕 𝒊𝒔 𝒔𝒊𝒎𝒑𝒍𝒚 𝒕𝒉𝒆 𝒍𝒂𝒏𝒈𝒖𝒂𝒈𝒆 𝒖𝒔𝒆𝒅 𝒕𝒐 𝒄𝒐𝒎𝒎𝒖𝒏𝒊𝒄𝒂𝒕𝒆 𝒘𝒊𝒕𝒉 𝒅𝒂𝒕𝒂𝒃𝒂𝒔𝒆𝒔
-
 𝐄𝐱𝐚𝐦𝐩𝐥𝐞:You ask the database: Show all users
 𝐈𝐧 𝐒𝐐𝐋:  SELECT *FROM users; -> That's SQL
 
