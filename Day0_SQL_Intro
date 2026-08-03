@@ -95,7 +95,7 @@ Whenever you open Instagram:
 𝗗𝗶𝘀𝗽𝗹𝗮𝘆 𝗗𝗮𝘁𝗮 Sooo 𝐖𝐢𝐭𝐡𝐨𝐮𝐭 𝐭𝐡𝐞 𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞... 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 𝐢𝐬 𝐣𝐮𝐬𝐭 𝐚𝐧 𝐞𝐦𝐩𝐭𝐲 𝐚𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧
 
 𝗘𝘅𝗮𝗺𝗽𝗹𝗲 𝟯 – 𝗦𝘄𝗶𝗴𝗴𝘆 / 𝗭𝗼𝗺𝗮𝘁𝗼
-You order Chicken Biryan - The order status changes
+You order Chicken Biryani - The order status changes
 𝗢𝗿𝗱𝗲𝗿 𝗣𝗹𝗮𝗰𝗲𝗱
 |
 𝗥𝗲𝘀𝘁𝗮𝘂𝗿𝗮𝗻𝘁 𝗔𝗰𝗰𝗲𝗽𝘁𝗲𝗱
@@ -127,7 +127,7 @@ Stock = 99 -> That's it -> Inventory management is nothing but updating values i
 
 Database changes to::
 Ganesh = ₹10000
-Rahul = ₹195000 
+Nanda = ₹195000 
 No magic -> Just database updates anthee
 
 Example 6 – Netflix
@@ -153,17 +153,15 @@ That's it ->╰┈➤ 𝗗𝗮𝘁𝗮 𝗶𝘀 𝗻𝗼𝘁𝗵𝗶𝗻𝗴 �
 - Your face used for Face Unlock is data
 - Your location on Google Maps is data -> Every digital application works because of data
 
-╰┈➤ 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻  is processed, organized, and meaningful data that helps us understand something or make a decision
+╰┈➤ 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻  is processed, organized, and meaningful/cleaned data that helps us understand something or make a decision
 In simplega cheppalantee, Data + Meaning = Information
 
 ╰┈➤ A database is simply A structured system that stores, organizes, retrieves, updates, and manages data efficiently.It is much smarter than Excel
--𝗜𝘁 𝗶𝘀 𝗺𝘂𝗰𝗵 𝘀𝗺𝗮𝗿𝘁𝗲𝗿 𝘁𝗵𝗮𝗻 𝗘𝘅𝗰𝗲𝗹
 - 𝗠𝘂𝗰𝗵 𝗳𝗮𝘀𝘁𝗲𝗿 𝘁𝗵𝗮𝗻 𝘁𝗲𝘅𝘁 𝗳𝗶𝗹𝗲𝘀
 - 𝗠𝘂𝗰𝗵 𝘀𝗮𝗳𝗲𝗿 𝘁𝗵𝗮𝗻 𝘀𝘁𝗼𝗿𝗶𝗻𝗴 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗿𝗮𝗻𝗱𝗼𝗺𝗹𝘆
 - 𝗘𝘃𝗲𝗿𝘆 𝗺𝗼𝗱𝗲𝗿𝗻 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗱𝗲𝗽𝗲𝗻𝗱𝘀 𝗼𝗻 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲𝘀
-
-𝗜𝗳 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗱𝗮𝘁𝗮, 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 -> 𝗜𝗳 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲, 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗦𝗤𝗟
-###Real Industry Workflow
+        𝗜𝗳 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗱𝗮𝘁𝗮, 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 -> 𝗜𝗳 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲, 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗻𝗼 𝗦𝗤𝗟
+###Databases real Workflow::
 User
  |
 Produces Data
@@ -182,6 +180,20 @@ User Takes Action
  Difficult to understand | Easy to understand 
  Input                   | Output             
  Stored in database      | Displayed to users 
+
+Servers
+1
+2
+3
+Server: A server is a computer or software that provides services, data, or resources to other computers known as clients over a network. -> This architecture is called the client-server model
+-> Servers can handle various functionalities such as sharing data, performing computationsor managing resources for multiple clients
+╰┈➤Types of Servers
+1. 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗦𝗲𝗿𝘃𝗲𝗿: Hosts web applications, allowing users to run and use them without installing them on their own devices
+2. 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝗦𝗲𝗿𝘃𝗲𝗿: Maintains and shares databases over a network providing organized data to clients
+3. 𝗙𝗶𝗹𝗲 𝗦𝗲𝗿𝘃𝗲𝗿: Shares files and folders over a networkma king them accessible to networked computers
+4. 𝗪𝗲𝗯 𝗦𝗲𝗿𝘃𝗲𝗿: Hosts web pages and makes the World Wide Web possible by serving web content to browsers
+5. 𝗠𝗮𝗶𝗹 𝗦𝗲𝗿𝘃𝗲𝗿: Facilitates email communication by sending and receiving emails
+6. 𝗣𝗿𝗼𝘅𝘆 𝗦𝗲𝗿𝘃𝗲𝗿: Acts as an intermediary between a client and another server,improving performance and security
 
 Then What Is SQL?
 𝑺𝑸𝑳 𝒔𝒕𝒂𝒏𝒅𝒔 𝒇𝒐𝒓 𝑺𝒕𝒓𝒖𝒄𝒕𝒖𝒓𝒆𝒅 𝑸𝒖𝒆𝒓𝒚 𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 -> 𝑰𝒕 𝒊𝒔 𝒔𝒊𝒎𝒑𝒍𝒚 𝒕𝒉𝒆 𝒍𝒂𝒏𝒈𝒖𝒂𝒈𝒆 𝒖𝒔𝒆𝒅 𝒕𝒐 𝒄𝒐𝒎𝒎𝒖𝒏𝒊𝒄𝒂𝒕𝒆 𝒘𝒊𝒕𝒉 𝒅𝒂𝒕𝒂𝒃𝒂𝒔𝒆𝒔
@@ -260,7 +272,7 @@ For each app, answer these questions:
 -> 𝗪𝗵𝗮𝘁 𝗵𝗮𝗽𝗽𝗲𝗻𝘀 𝘄𝗵𝗲𝗻 𝗱𝗮𝘁𝗮 𝗶𝘀 𝘂𝗽𝗱𝗮𝘁𝗲𝗱?
 -> 𝗪𝗵𝗮𝘁 𝗵𝗮𝗽𝗽𝗲𝗻𝘀 𝘄𝗵𝗲𝗻 𝗱𝗮𝘁𝗮 𝗶𝘀 𝗱𝗲𝗹𝗲𝘁𝗲𝗱?
 -> 𝗪𝗵𝗶𝗰𝗵 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝗿𝗲𝗾𝘂𝗶𝗿𝗲 𝘀𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴?
--> 𝗛𝗼𝘄 𝗺𝗮𝗻𝘆 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝘁𝗮𝗯𝗹𝗲𝘀 𝗱𝗼 𝘆𝗼𝘂 𝘁𝗵𝗶𝗻𝗸 𝘁𝗵𝗶𝘀 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗺𝗶𝗴𝗵𝘁 𝗵𝗮𝘃𝗲?
+-> 𝗛𝗼𝘄 𝗺𝗮𝗻𝘆 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝘁𝗮𝗯𝗹𝗲𝘀 𝗱𝗼 𝘆𝗼𝘂 𝘁𝗵𝗶𝗻𝗸 𝘁𝗵𝗶𝘀 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗺𝗶𝗴𝗵𝘁 𝗵𝗮𝘃𝗲? and why
 -> 𝗪𝗵𝗶𝗰𝗵 𝘁𝗮𝗯𝗹𝗲𝘀 𝗮𝗿𝗲 𝗽𝗿𝗼𝗯𝗮𝗯𝗹𝘆 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝘁𝗼 𝗲𝗮𝗰𝗵 𝗼𝘁𝗵𝗲𝗿?(Nizamina SQL Developerki veetiki answer cheyagaladaa)
 
 𝗗𝗮𝘆 𝟭 𝗣𝗿𝗲𝘃𝗶𝗲𝘄(𝗧𝗼𝗺𝗼𝗿𝗿𝗼𝘄 𝘄𝗲 𝗯𝗲𝗴𝗶𝗻 𝗵𝗮𝗻𝗱𝘀-𝗼𝗻 𝗹𝗲𝗮𝗿𝗻𝗶𝗻𝗴)
