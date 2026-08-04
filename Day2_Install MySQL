@@ -8,3 +8,47 @@ Why do we need both?
 How do they communicate?
 How does a backend application connect to MySQL?
 Install and configure MySQL correctly
+
+
+╰┈➤ MySQL?: 𝗠𝘆𝗦𝗤𝗟 𝗶𝘀 𝗮 𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 𝗦𝘆𝘀𝘁𝗲𝗺/Engine(𝗥𝗗𝗕𝗠𝗦) which manages your data to:::𝗦𝘁𝗼𝗿𝗲 𝗱𝗮𝘁𝗮 𝘀𝗮𝗳𝗲𝗹𝘆
+                                                                              𝗥𝗲𝘁𝗿𝗶𝗲𝘃𝗲 𝗱𝗮𝘁𝗮 𝗾𝘂𝗶𝗰𝗸𝗹𝘆
+                                                                              𝗨𝗽𝗱𝗮𝘁𝗲 𝗿𝗲𝗰𝗼𝗿𝗱𝘀
+                                                                              𝗗𝗲𝗹𝗲𝘁𝗲 𝗿𝗲𝗰𝗼𝗿𝗱𝘀
+                                                                              𝗠𝗮𝗻𝗮𝗴𝗲 𝗿𝗲𝗹𝗮𝘁𝗶𝗼𝗻𝘀𝗵𝗶𝗽𝘀
+                                                                              𝗛𝗮𝗻𝗱𝗹𝗲 𝘁𝗵𝗼𝘂𝘀𝗮𝗻𝗱𝘀 𝗼𝗿 𝗲𝘃𝗲𝗻 𝗺𝗶𝗹𝗹𝗶𝗼𝗻𝘀 𝗼𝗳 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝘀
+╰┈➤ 𝗠𝘆𝗦𝗤𝗟 Server?{ one of the most misunderstood concepts]
+Students often think MySQL and MySQL Server are different products
+MySQL Server is the actual database engine -> It runs as a background service
+Even when no application is open, the server can still be running
+Its responsibilities include:
+-> Managing databases
+-> Processing SQL queries
+-> Managing users and passwords
+-> Handling multiple client connections
+-> Writing data to disk
+-> Reading data from disk -> It is the heart of MySQL(Manam padukunnamanii heart function aagipodhu kadaa just like MySQL erver..)
+
+╰┈➤ 𝗠𝘆𝗦𝗤𝗟 𝗪𝗼𝗿𝗸𝗯𝗲𝗻𝗰𝗵?
+Ippudu imagine the MySQL Server has no screen - soo How do you interact with it? -> That's where MySQL Workbench comes in
+
+Workbench is simply a graphical client- it allows you to:
+-> Connect to MySQL Server
+-> Write SQL queries
+-> Create databases
+-> Design tables
+-> View data
+-> Manage users
+-> Export and import databases
+
+𝗠𝘆𝗦𝗤𝗟 𝗦𝗲𝗿𝘃𝗲𝗿 = Engine
+𝗪𝗼𝗿𝗸𝗯𝗲𝗻𝗰𝗵 = Dashboard anamata
+Just as a car's dashboard lets you interact with the engine, Workbench lets you interact with the server anthee...
+
+╰┈➤Server vs Workbench(Interviewsloo..)
+𝗠𝘆𝗦𝗤𝗟 𝗦𝗲𝗿𝘃𝗲𝗿              𝗠𝘆𝗦𝗤𝗟 𝗪𝗼𝗿𝗸𝗯𝗲𝗻𝗰𝗵     
+ Stores data            | Displays data       
+ Executes SQL           | Lets you write SQL  
+ Runs in the background | Desktop application 
+ Database engine        | Graphical interface 
+=> If you close Workbench, your data is still inside MySQL Server
+
