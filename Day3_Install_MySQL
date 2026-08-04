@@ -1,0 +1,26 @@
+╰┈➤ Installing MySQL
+We'll install:
+MySQL Server
+MySQL Workbench
+
+During installation, pay attention to:
+- Root password
+- Port number (default: 3306)
+- Server status
+
+╰┈➤ First Connection
+After installation:
+- Open MySQL Workbench
+- Create a new connection (if needed)
+- Connect to your local MySQL Server
+- Verify that the server is running
+
+╰┈➤ Algonex Hack
+In a company like ALGONEX, MySQL Server is usually not installed on a developer's laptop
+
+Instead, it runs on:
+- A dedicated server
+- A virtual machine
+- A cloud instance (AWS, Azure, GCP) -> Every backend service connects to that server over a network
+As a developer, you connect to the same database using tools like Workbench or your application's database driver
+
