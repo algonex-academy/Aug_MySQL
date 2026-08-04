@@ -24,3 +24,112 @@ Instead, it runs on:
 - A cloud instance (AWS, Azure, GCP) -> Every backend service connects to that server over a network
 As a developer, you connect to the same database using tools like Workbench or your application's database driver
 
+╰┈➤ 𝗜𝗻𝘀𝘁𝗮𝗹𝗹𝗶𝗻𝗴 𝗠𝘆𝗦𝗤𝗟 𝗼𝗻 𝗪𝗶𝗻𝗱𝗼𝘄𝘀 (𝗦𝘁𝗲𝗽 𝗯𝘆 𝗦𝘁𝗲𝗽)
+# Before Installation
+Many beginners think they are installing one software called MySQL.
+
+Actually, we're installing two important components ikkada::
+𝟭. 𝗠𝘆𝗦𝗤𝗟 𝗦𝗲𝗿𝘃𝗲𝗿 - 𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝗮𝗰𝘁𝘂𝗮𝗹 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 -> 𝗜𝘁 𝘀𝘁𝗼𝗿𝗲𝘀 𝘆𝗼𝘂𝗿 𝗱𝗮𝘁𝗮
+Without MySQL Server, nothing works -> The Brain of the Database
+
+𝟮. 𝗠𝘆𝗦𝗤𝗟 𝗪𝗼𝗿𝗸𝗯𝗲𝗻𝗰𝗵 -> 𝗪𝗼𝗿𝗸𝗯𝗲𝗻𝗰𝗵 𝗶𝘀 𝗷𝘂𝘀𝘁 𝗮 𝗴𝗿𝗮𝗽𝗵𝗶𝗰𝗮𝗹 𝗶𝗻𝘁𝗲𝗿𝗳𝗮𝗰𝗲
+It helps us
+- Write SQL
+- Create tables
+- View data
+- Execute queries -> The Remote Control for MySQL Server
+
+╰┈➤Step 1: Check Your System
+Before installing, verify:
+-> Windows 10 or Windows 11
+-> At least 4 GB RAM (8 GB recommended)
+-> Around 2 GB free disk space
+-> Administrator access
+
+╰┈➤Step 2: Download MySQL Installer
+Open your browser -> Go to the official MySQL website: https://dev.mysql.com/downloads/installer/
+You'll see two installer options
+Option 1: mysql-installer-web-community - Small download (~2 MB)
+Downloads components during installation -> Requires Internet
+
+Option 2 (Recommended) - mysql-installer-community
+Large download (~400 MB+) -> Contains everything -> Works even without Internet after downloading -> Take this
+
+╰┈➤Step 3: Start Installation
+Double-click: mysql-installer-community.exe
+Allow Windows permission if prompted-> Click Yes
+
+╰┈➤Step 4: Choose Setup Type
+You'll see several options -> Developer Default
+Includes
+MySQL Server
+MySQL Workbench
+Shell
+Connectors
+Documentation
+
+Choose: Developer Default -> Click Next
+
+╰┈➤Step 5: Install Required Software
+Sometimes MySQL asks to install:
+Microsoft Visual C++ Redistributable
+.NET Framework -> Click Execute
+
+Wait until everything installs
+Click -> Next
+
+╰┈➤Step 6: Install Products
+You'll see something like
+MySQL Server 9.x
+MySQL Workbench
+MySQL Shell
+Connectors -> Click Execute -> Wait-> This may take several minutes
+When everything shows -> Complete -> Click Next
+
+╰┈➤Step 7: Configure MySQL Server
+Now configuration begins(This is important)
+Config Type -> Choose Development Computer
+Why?: Because you're installing MySQL for learning on your own laptop. ->This setting uses fewer system resources -> Click Next
+Step 8: Connectivity
+
+You'll see
+TCP/IP
+Port : 3306 -> Don't change it (Port 3306 is MySQL's default communication port) -> Think of it as MySQL's phone number
+Applications use this port to communicate with the server -> Click Next
+
+╰┈➤Step 9: Authentication Method
+You'll see two options-> Use Strong Password Encryption -> This is the recommended and more secure option -> Click Next
+Step ╰┈➤10: Create Root Password
+Now you'll create the administrator password
+Example
+Username
+root Password: Algonex@DOB (Choose a password you can remember) -> Avoid weak passwords like 123456 or password -> Click Next
+╰┈➤Step 11: Windows Service -> Keep the default settings
+Service Name
+MySQL90 (or a similar version-based name)
+This allows the server to start automatically when Windows starts -> Click Next
+Step 12: Apply Configuration -> You'll now see several tasks
+
+Writing Configuration, Starting Server, Applying Security, Finishing Configuration -> Click Execute -> Wait until every step shows a green check mark -> Click Finish
+╰┈➤Step 13: Finish Installation -> Click Next -> Finish -> Congratulations! MySQL is now installed.
+
+╰┈➤Step 14: Open MySQL Workbench
+Search Windows for MySQL Workbench -> Open it
+You'll see: Local Instance MySQL -> Double-click it
+
+╰┈➤Step 15: Login
+You'll be prompted for the password
+Enter the root password you created during installation -> Click OK
+If everything is correct, you'll see the MySQL Workbench SQL Editor -> Congratulations  -> You are now connected to your first MySQL Server -> SELECT VERSION();
+
+╰┈➤You installed:
+MySQL Server -> Stores Databases
+and
+MySQL Workbench -> Lets You Control the Server
+
+╰┈➤Before the next class, make sure you can:
+- Open MySQL Workbench
+- Connect to your local MySQL Server
+- Enter your root password successfully
+- Run SELECT VERSION(); without any errors
+
