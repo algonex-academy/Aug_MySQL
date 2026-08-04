@@ -52,3 +52,45 @@ Just as a car's dashboard lets you interact with the engine, Workbench lets you 
  Database engine        | Graphical interface 
 => If you close Workbench, your data is still inside MySQL Server
 
+╰┈➤Saree oka scenario chudham:: What Happens When You Click "Login"?
+Bhavani enter:
+Username: Anitha_mom_princess
+Password: ********
+
+Ikkada the flow enti marii:
+Instagram App(Anitha id anukundhaam)
+  |
+Backend API
+   |
+MySQL Server
+    |
+Checks Users Table
+     |
+Returns Result
+      |
+Login Successful
+Ikkada The mobile app never talks directly to MySQL -> The backend sits in between
+ENDUKUUU?:: Because exposing the database directly would be a major security risk kadaa soo
+
+╰┈➤ Where Is the Database Stored?
+Chaalamandi beginners think: "My database is inside Workbench" -> kaani That's incorrect
+
+𝗧𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝗶𝘀 𝘀𝘁𝗼𝗿𝗲𝗱 𝗼𝗻 𝘁𝗵𝗲 𝗠𝘆𝗦𝗤𝗟 𝗦𝗲𝗿𝘃𝗲𝗿
+𝗪𝗼𝗿𝗸𝗯𝗲𝗻𝗰𝗵 𝗶𝘀 𝗷𝘂𝘀𝘁 𝗮 𝘄𝗶𝗻𝗱𝗼𝘄 𝘁𝗼 𝘃𝗶𝗲𝘄 𝗮𝗻𝗱 𝗺𝗮𝗻𝗮𝗴𝗲 𝗶𝘁
+
+You can even use different tools like:
+- 𝙈𝙮𝙎𝙌𝙇 𝙒𝙤𝙧𝙠𝙗𝙚𝙣𝙘𝙝
+- 𝘿𝘽𝙚𝙖𝙫𝙚𝙧
+- 𝙥𝙝𝙥𝙈𝙮𝘼𝙙𝙢𝙞𝙣
+- 𝙑𝙎 𝘾𝙤𝙙𝙚 𝙎𝙌𝙇 𝙚𝙭𝙩𝙚𝙣𝙨𝙞𝙤𝙣𝙨 -> All of them can connect to the same MySQL Server
+
+╰┈➤Installing 𝗠𝘆𝗦𝗤𝗟
+We'll install:
+MySQL Server
+MySQL Workbench
+
+During installation, pay attention to:
+- Root password
+- Port number (default: 3306)
+- Server status -> We'll use these throughout the course
+
