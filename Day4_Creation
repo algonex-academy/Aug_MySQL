@@ -50,13 +50,17 @@ Posts                            Products
 Stories                          Orders
 Followers                        Payments     -> Separate applications -Separate databases
 
+## SQL Queries
 -- Creating Our First Database
-CREATE DATABASE ecommerce_db;  idi⚡click cheyandii
+select version(); -- To check installed version
+CREATE DATABASE database_name;  idi⚡click cheyandii
 Verify It: SHOW DATABASES; --  system databases created automatically by MySQL
-1. mysql Database(Administration Office) - It stores information about MySQL itself
-Examples include: User accounts, Password authentication, Roles, Privileges/permissions, Server configuration metadata
 
-2.information_schema(MySQL's Dictionary) - it stores metadata(Metadata is data about data)
+-- MySQL Predefined Databases
+1. mysql Database(Administration Office) - It stores information about MySQL itself
+Examples include: User accounts,Password authentication,Roles, Privileges/permissions, Server configuration metadata
+
+2.information_schema(MySQL's Dictionary) - it stores metadata(Metadata is data about/inside another data)
 Example: Suppose you create a table anukundham
 CREATE TABLE users (user_id INT, name VARCHAR(50) ); --The actual user data will go into your users table
 
@@ -66,26 +70,28 @@ But where does MySQL remember things like:
 ->Data types
 -> Number of columns -> That's metadata And it's available through the information_schema
 
+              MySQL Sever->DB's Data ->Table's Data -> rows&Columns-> values
+
 3. Performance_schema(Dashboard) -  which monitors MySQL insights 
 It collects performance-related information such as:
--Query execution times
+- Query execution times
 - Wait events
 - Resource usage
--Connection activity -> DBAs use it to identify bottlenecks and troubleshoot slow systems
+- Connection activity -> DBAs use it to identify bottlenecks and troubleshoot slow systems(High execution Time)
 
-4. sys -"If we already have performance_schema, why do we need sys???" enduku
+4. sys(Whole system reports) -"If we already have performance_schema, why do we need sys???" enduku
 The performance_schema contains a lot of detailed information, but it can be difficult to read directly
 --> The sys database provides simplified views and reports built on top of performance_schema
-==> Think of it as a dashboard that presents performance information in a more user-friendly way
+==> You can think sys as a dashboard that presents performance information in a more user-friendly way
 
- Database                          Pu rpose                                    Used By                    
+ Database                          Purpose                                    Used By                    
  mysql              | User accounts, privileges, internal configuration  | DBAs and MySQL             
  information_schema | Metadata about databases, tables, columns, indexes | Developers & DBAs          
  performance_schema | Server performance monitoring                      | DBAs                       
  sys                | Simplified performance reports and views           | DBAs & Advanced Developers 
 
-Think of MySQL like a company::
-mysql -> HR & Security Department (users and permissions)
+### MySQL for Algonex company::
+mysql -> HR/Technical & Security Department (users and permissions)
 information_schema -> Company Documentation Office (metadata)
 performance_schema -> Monitoring Team (performance metrics)
 sys -> Management Dashboard (easy-to-read reports)
@@ -119,7 +125,7 @@ Addresses
 Cart
 Wishlist
 
-Column?(Vertical Secction) - describes what information we want to store -> columns as questions
+Column?(Vertical Section) - describes what information we want to store -> columns as questions
  Column         Questions chudu                          
 User ID | Who is this user?                 
  Name    | What is the user's name?          
