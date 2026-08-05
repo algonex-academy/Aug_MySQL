@@ -1,0 +1,142 @@
+Understanding Databases, Schemas & Your First Database
+What exactly is a database?
+What is a schema?
+Why do companies create multiple databases?
+What happens when we create a database?
+How do we create our first database?
+
+
+                    MySQL Server
+                    ├── CompanyDB
+                    ├── HospitalDB
+                    ├── BankingDB
+                    ├── InstagramDB
+                    ├── AmazonDB
+
+Real Industry Example
+Suppose one company develops three applications
+1. HR Management System
+2. Payroll System
+3. Leave Management System
+
+Will they store everything in one database? -> Usually No
+Instead HR_DB, Payroll_DB, Leave_DB - Each application gets its own database Why?
+Because:
+- Easier maintenance
+- Better security
+- Better backup
+- Better scalability
+- Teams can work independently
+
+Database?: A database is a logical container that stores related tables for a specific application
+                            Database -> Tables -> Rows ->Columns -> Actual Data
+Amazon_DB
+├── Users
+├── Products
+├── Orders
+├── Payments
+├── Reviews
+├── Cart
+├── Wishlist
+
+Schema?: Database and Schema mean almost the same thing (When you create a database,Workbench shows it under Schemas)
+Interview Tip: In MySQL, CREATE DATABASE and CREATE SCHEMA are synonyms
+
+Why Do We Need Multiple Databases?
+Instagram_DB                     Amazon_DB
+  |                                |
+Users                            Users
+Posts                            Products
+Stories                          Orders
+Followers                        Payments     -> Separate applications -Separate databases
+
+-- Creating Our First Database
+CREATE DATABASE ecommerce_db;  idi⚡click cheyandii
+Verify It: SHOW DATABASES; --  system databases created automatically by MySQL
+1. mysql Database(Administration Office) - It stores information about MySQL itself
+Examples include: User accounts, Password authentication, Roles, Privileges/permissions, Server configuration metadata
+
+2.information_schema(MySQL's Dictionary) - it stores metadata(Metadata is data about data)
+Example: Suppose you create a table anukundham
+CREATE TABLE users (user_id INT, name VARCHAR(50) ); --The actual user data will go into your users table
+
+But where does MySQL remember things like:
+->Table name
+->Column names
+->Data types
+-> Number of columns -> That's metadata And it's available through the information_schema
+
+3. Performance_schema(Dashboard) -  which monitors MySQL insights 
+It collects performance-related information such as:
+-Query execution times
+- Wait events
+- Resource usage
+-Connection activity -> DBAs use it to identify bottlenecks and troubleshoot slow systems
+
+4. sys -"If we already have performance_schema, why do we need sys???" enduku
+The performance_schema contains a lot of detailed information, but it can be difficult to read directly
+--> The sys database provides simplified views and reports built on top of performance_schema
+==> Think of it as a dashboard that presents performance information in a more user-friendly way
+
+ Database                          Pu rpose                                    Used By                    
+ mysql              | User accounts, privileges, internal configuration  | DBAs and MySQL             
+ information_schema | Metadata about databases, tables, columns, indexes | Developers & DBAs          
+ performance_schema | Server performance monitoring                      | DBAs                       
+ sys                | Simplified performance reports and views           | DBAs & Advanced Developers 
+
+Think of MySQL like a company::
+mysql -> HR & Security Department (users and permissions)
+information_schema -> Company Documentation Office (metadata)
+performance_schema -> Monitoring Team (performance metrics)
+sys -> Management Dashboard (easy-to-read reports)
+ecommerce_db -> Your actual business department (application data)
+
+## Select the Database - "From now on- you're working inside ecommerce_db"
+USE ecommerce_db; --Now every table we create will belong to this database
+
+╰┈➤ How Companies Work: Real companiesloo developers rarely create databases in production
+Usualga,
+- Database Administrators (DBAs) create the production databases
+- Developers receive access permissions
+- Developers create tables, indexes, and write queries within the assigned database
+
+╰┈➤ Tables, Columns, Rows & Data Types
+Tables:A table is a structured collection of related data arranged in rows and columns(One table should store one type of information)
+For examplega
+Users Table -> User information
+Products Table -> Product information
+Orders Table -> Order information
+Payments Table -> Payment information -- Don't mix different types of data in one table
+
+Amazon Table coulms: | User | Product | Price | Payment | Delivery Boy | Review | -> Not like this
+Instead, Amazon creates separate tables
+Users
+Products
+Orders
+Payments                  --Each table has one responsibility
+Reviews
+Addresses
+Cart
+Wishlist
+
+Column?(Vertical Secction) - describes what information we want to store -> columns as questions
+ Column         Questions chudu                          
+User ID | Who is this user?                 
+ Name    | What is the user's name?          
+Email   | What is the user's email?             -- A column defines the type of information
+Mobile  | What is the user's phone number?  
+City    | Which city does the user live in? 
+
+Row/Record?(horizontal line): represents one complete object
+                    One row = One User (Each row stores one user's complete details)
+Field?: A field is one individual/single value inside a table
+Column -> Type of information
+Row -> Complete record
+Field -> One individual value
+
+A Database contains Tables
+A Table contains Rows and Columns
+A Row is one complete record
+A Column defines one type of information
+A Field is one individual value
+Data Types define what kind of values each column can store ardamindhaaa...
