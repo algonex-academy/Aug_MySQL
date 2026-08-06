@@ -1,0 +1,177 @@
+╰┈➤Data Types chudhaama
+Imagine you go to a bank: 
+The bank gives you different lockers: Small Locker, Medium Locker, Large Locker
+Can you park a car inside a jewelry locker? -> pedthaara evarina?
+Can you keep a diamond ring inside a car garage? -> Yes ->But it's a waste of space -Computers think the same way
+"What kind of data are you planning to store?" -> Because different data needs different storage -> This is called a Data Type
+
+𝗔 𝗗𝗮𝘁𝗮 𝗧𝘆𝗽𝗲 𝘁𝗲𝗹𝗹𝘀 𝗠𝘆𝗦𝗤𝗟 𝘄𝗵𝗮𝘁 𝘁𝘆𝗽𝗲 𝗼𝗳 𝘃𝗮𝗹𝘂𝗲 𝗮 𝗰𝗼𝗹𝘂𝗺𝗻 𝗰𝗮𝗻 𝘀𝘁𝗼𝗿𝗲 𝗮𝗻𝗱 𝗵𝗼𝘄 𝗺𝘂𝗰𝗵 𝘀𝘁𝗼𝗿𝗮𝗴𝗲 𝘀𝗵𝗼𝘂𝗹𝗱 𝗯𝗲 𝗮𝗹𝗹𝗼𝗰𝗮𝘁𝗲𝗱 𝗳𝗼𝗿 𝗶𝘁
+-> What values are allowed
+-> How much storage is required
+
+╰┈➤𝗠𝘆𝗦𝗤𝗟 𝗗𝗮𝘁𝗮 𝗧𝘆𝗽𝗲𝘀 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝗶𝗲𝘀
+                                                                        MySQL Data Types
+                                                                        ├── Numeric
+                                                                        ├── String
+                                                                        ├── Date & Time
+                                                                        ├── Boolean
+                                                                        ├── Binary
+                                                                        ├── JSON
+                                                                        ├── Spatial
+-- PART 1 —Numeric Types (These store numbers)
+𝗗𝗮𝘁𝗮 𝗧𝘆𝗽𝗲        𝗦𝘆𝗻𝘁𝗮𝘅 enti?                    𝗦𝘁𝗼𝗿𝗲𝘀                        𝗥𝗲𝗮𝗹 𝗘𝘅𝗮𝗺𝗽𝗹𝗲     𝗪𝗵𝗲𝗿𝗲 𝗪𝗲 𝗨𝘀𝗲                                 
+TINYINT     | rating TINYINT         | Small numbers (-128 to 127) |     5             | Rating, Boolean flags (0/1), Age (sometimes) 
+SMALLINT     | department_id SMALLINT | Small integers              |   101           | Department IDs, Branch IDs                   
+INT          | user_id INT            | Whole numbers               |  10125          | User ID, Product ID, Quantity, Order Count   
+BIGINT       | order_id BIGINT        | Very large integers         | 9876543210123   | Order IDs, Transaction IDs, Large Systems    
+DECIMAL(M,D) | price DECIMAL(10,2)    | Exact decimal numbers       | 59999.99        | Product Price, Salary, Bank Balance          
+FLOAT       | temperature FLOAT      | Approximate decimal         | 36.75           | Temperature, Scientific Data                 
+DOUBLE      | latitude DOUBLE        | High precision decimal      | 17.385044       | GPS Coordinates, Scientific Calculations     
+
+𝗙𝗶𝗲𝗹𝗱 𝗡𝗮𝗺𝗲              𝗥𝗲𝗰𝗼𝗺𝗺𝗲𝗻𝗱𝗲𝗱 𝗗𝗮𝘁𝗮 𝗧𝘆𝗽𝗲                                            𝗪𝗵𝘆? Batch2                                                  
+ First Name          | VARCHAR(50)                                                  | Variable-length text                                      
+ Last Name           | VARCHAR(50)                                                  | Variable-length text                                      
+ Full Name           | VARCHAR(100)                                                 | Variable-length text                                      
+ Email               | VARCHAR(255)                                                 | Email length varies                                       
+ Mobile Number       | VARCHAR(15)                                                  | May include '+', leading zeros, not used for calculations 
+ Address             | TEXT                                                         | Can be long                                               
+ City                | VARCHAR(100)                                                 | Variable text                                             
+ State               | VARCHAR(100)                                                 | Variable text                                             
+ Country Code        | CHAR(3)                                                      | Always fixed length (ISO codes like 'IND', 'USA')         
+ PIN Code / ZIP Code | VARCHAR(10)                                                  | Some countries include letters (e.g., `SW1A 1AA`)         
+ Product Name        | VARCHAR(200)                                                 | Variable text                                             
+ Product Description | TEXT                                                         | Long description                                          
+ Order Status        | ENUM                                                         | Limited predefined values                                 
+ Gender              | ENUM                                                         | Limited predefined values                                 
+ Employee Skills     | SET (or preferably a separate table in normalized designs) | Multiple selections                                      
+
+╰┈➤ 𝗣𝗔𝗥𝗧𝟮 -𝗦𝘁𝗿𝗶𝗻𝗴 𝗗𝗮𝘁𝗮 𝗧𝘆𝗽𝗲𝘀
+String Types
+├── CHAR
+├── VARCHAR
+├── TINYTEXT
+├── TEXT
+├── MEDIUMTEXT
+├── LONGTEXT
+├── ENUM
+├── SET
+
+╰┈➤Date & Time Data Types
+𝗗𝗮𝘁𝗮 𝗧𝘆𝗽𝗲        𝗦𝘆𝗻𝘁𝗮𝘅                   𝗦𝘁𝗼𝗿𝗲𝘀                𝗥𝗲𝗮𝗹 𝗘𝘅𝗮𝗺𝗽𝗹𝗲 chudnadndi        𝗪𝗵𝗲𝗿𝗲 𝗪𝗲 𝗨𝘀𝗲                                
+CHAR(n)    | country_code CHAR(3) | Fixed-length text    | 'IND', 'USA'                Country Codes, Gender Codes, Employee Codes 
+VARCHAR(n) | name VARCHAR(100)    | Variable-length text | 'Heena Kousar'              Name, Email, City, Product Name             
+TEXT       | description TEXT     | Long text            | Product description          Reviews, Comments, Blog Content             
+MEDIUMTEXT | article MEDIUMTEXT   | Very large text      | Long Article                 Documentation, Articles                     
+LONGTEXT   | content LONGTEXT     | Huge text            | Entire Book                  Logs, Books, Large HTML/JSON                
+
+╰┈➤Date & Time Data Types
+𝗗𝗮𝘁𝗮 𝗧𝘆𝗽𝗲        𝗦𝘆𝗻𝘁𝗮𝘅                   𝗦𝘁𝗼𝗿𝗲𝘀                𝗥𝗲𝗮𝗹 𝗘𝘅𝗮𝗺𝗽𝗹𝗲 chudnadndi        𝗪𝗵𝗲𝗿𝗲 𝗪𝗲 𝗨𝘀𝗲                                
+ DATE      | dob DATE              | Date only   | '2002-05-18'                            DOB, Joining Date                
+TIME      | start_time TIME       | Time only   | '09:30:00'                               Shift Timing, Meeting Time       
+DATETIME  | created_at DATETIME   | Date + Time | '2026-08-06 10:30:45'                     Registration Time, Order Time    
+TIMESTAMP | updated_at TIMESTAMP  | Date + Time | '2026-08-06 10:30:45'                    Last Updated Time, Audit Logs    
+YEAR      | manufacture_year YEAR | Year        | '2026'                                   Manufacturing Year, Passing Year 
+
+╰┈➤Boolean Data Type
+𝗗𝗮𝘁𝗮 𝗧𝘆𝗽𝗲        𝗦𝘆𝗻𝘁𝗮𝘅                   𝗦𝘁𝗼𝗿𝗲𝘀                𝗥𝗲𝗮𝗹 𝗘𝘅𝗮𝗺𝗽𝗹𝗲                       𝗪𝗵𝗲𝗿𝗲 𝗪𝗲 𝗨𝘀𝗲 chudnadi                                
+ BOOLEAN (Alias of TINYINT(1))       | is_active BOOLEAN      | True / False | TRUE, FALSE | Active Status, Email Verified, Admin Flag 
+
+╰┈➤Special Data Types
+𝗗𝗮𝘁𝗮 𝗧𝘆𝗽𝗲        𝗦𝘆𝗻𝘁𝗮𝘅                                            𝗦𝘁𝗼𝗿𝗲𝘀                𝗘𝘅𝗮𝗺𝗽𝗹𝗲                                      𝗪𝗵𝗲𝗿𝗲 𝗪𝗲 𝗨𝘀𝗲                                
+ ENUM  | status ENUM('Pending','Shipped','Delivered') | One value from a list       | Shipped                           | Order Status, Gender, Payment Status   
+ SET   | skills SET('Python','SQL','AWS')             | Multiple values from a list | Python,SQL                        | Skills, Languages (Less Common)        
+ JSON  | address JSON                                 | JSON Object                 | {"city":"Bangalore","pin":560037} | API Responses, Flexible Configurations 
+
+𝗗𝗮𝘁𝗮 𝗧𝘆𝗽𝗲        𝗦𝘆𝗻𝘁𝗮𝘅                   𝗦𝘁𝗼𝗿𝗲𝘀                𝗥𝗲𝗮𝗹 𝗘𝘅𝗮𝗺𝗽𝗹𝗲 chudnadndi        𝗪𝗵𝗲𝗿𝗲 𝗪𝗲 𝗨𝘀𝗲                                
+ BLOB  | profile_photo BLOB        | Binary Data | Image   | Images, Files, Documents        (Usually, production apps store files in object storage and keep only the file path in the database.)* 
+
+-- saree oka table ready chedhaama marii::
+CREATE TABLE users (
+    user_id INT,
+    full_name VARCHAR(100),
+    email VARCHAR(255),
+    password_hash VARCHAR(255),
+    mobile VARCHAR(15),
+    gender ENUM('Male','Female','Other'),
+    address TEXT,
+    city VARCHAR(100),
+    state VARCHAR(100),
+    country_code CHAR(3),
+    pincode VARCHAR(10),
+    is_active BOOLEAN,
+    created_at DATETIME,
+    updated_at TIMESTAMP
+);
+
+╰┈➤ 𝘾𝙧𝙚𝙖𝙩𝙞𝙣𝙜 𝙔𝙤𝙪𝙧 𝙁𝙞𝙧𝙨𝙩 𝙏𝙖𝙗𝙡𝙚
+-- Before Writing SQL
+IImagine you're building an E-Commerce Application anukundhaam::
+The Product Manager comes to you and says: "We need a user registration feature"
+
+As a backend developer mee first question enti?
+Not: "What SQL query should I write?"
+"𝑊ℎ𝑎𝑡 𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛 𝑑𝑜 𝑤𝑒 𝑛𝑒𝑒𝑑 𝑡𝑜 𝑠𝑡𝑜𝑟𝑒 𝑎𝑏𝑜𝑢𝑡 𝑎 𝑢𝑠𝑒𝑟?" -> 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗺𝗲𝗻𝘁 𝗔𝗻𝗮𝗹𝘆𝘀𝗶𝘀
+
+╰┈➤𝗚𝗮𝘁𝗵𝗲𝗿𝗶𝗻𝗴 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗺𝗲𝗻𝘁𝘀
+Let's discuss with the Product Manager.
+
+When a user signs up, what information do we need?: Name, Email, Password, Phone Number
+Inkonchem deeplo alochinchandii::
+User ID, Date of Birth, Gender
+City, State, Country,
+Account Creation Date, Last Login, Is Active -> Idi SE thinking antee
+
+╰┈➤𝗦𝗵𝗼𝘂𝗹𝗱 𝗪𝗲 𝗦𝘁𝗼𝗿𝗲 𝗘𝘃𝗲𝗿𝘆𝘁𝗵𝗶𝗻𝗴? and Choosing Data Types
+We should design a system before coding(A beginner's mistake is adding every possible field -Let's keep simple man)
+ Column              Endukuu?                                     Data Type        
+ user_id    | Identify each user -> Numeric identifier       |  INT
+ full_name  | User's name       -> Text                      |  VARCHAR(100)
+ email      | Login and communication    ->Text              | VARCHAR(255)
+ mobile     | Contact number->Phone numbers aren't used for calculations   | VARCHAR(15)
+ city       | User's location  -> Text                       | VARCHAR(100)
+ created_at | Registration time->Date and time               | DATETIME
+
+╰┈➤What Does CREATE TABLE Mean?
+CREATE TABLE users (...);
+-- Ikkada MySQL does not store user data yet -> It creates a blueprint
+Think of building a new apartment: First, the architect creates the floor plan -> Only after construction do people move in
+CREATE TABLE
+      |
+Creates Structure
+      |
+No Data Yet (The table exists ->It's just empty)
+
+╰┈➤𝗢𝘂𝗿 𝗙𝗶𝗿𝘀𝘁 𝗦𝗤𝗟 𝗦𝘁𝗮𝘁𝗲𝗺𝗲𝗻𝘁
+USE ecommerce_db;
+
+-- Now create the table.
+CREATE TABLE users (
+    user_id INT,
+    full_name VARCHAR(100),
+    email VARCHAR(255),
+    mobile VARCHAR(15),
+    city VARCHAR(100),
+    created_at DATETIME
+);     -- Query OK, 0 rows affected
+-- "Why does it say 0 rows affected?" -> we only created the structure -We haven't inserted any records yet
+
+╰┈➤ How Do We Verify It?
+SHOW TABLES; 
+DESCRIBE users;
+DESC users;
+
+𝗙𝗶𝗲𝗹𝗱           𝗧𝘆𝗽𝗲          𝗡𝘂𝗹𝗹    𝗞𝗲𝘆  𝗗𝗲𝗳𝗮𝘂𝗹𝘁      𝗘𝘅𝘁𝗿𝗮
+ user_id    | int          | YES  |     | NULL        
+ full_name  | varchar(100) | YES  |     | NULL           
+ email      | varchar(255) | YES  |     | NULL           
+ mobile     | varchar(15)  | YES  |     | NULL           
+ city       | varchar(100) | YES  |     | NULL           
+ created_at | datetime     | YES  |     | NULL           
+-- ikkada what are Null, Key, Default, and Extra?"
+Field -> Column name
+Type -> Data type
+Null -> Whether the column can be left empty
+Key -> Whether the column has a special role (like Primary Key)
+Default -> Value MySQL uses if none is provided
+Extra -> Additional behaviors (like auto-increment)
+
